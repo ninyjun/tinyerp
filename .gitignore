@@ -1,0 +1,4 @@
+# Project exclude paths
+/acct-parent/target/
+/acct-sdk/target/
+/acct-svc/target/

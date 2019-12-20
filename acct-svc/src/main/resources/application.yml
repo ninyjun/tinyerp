@@ -1,0 +1,23 @@
+application:
+  name: ${SVC_NAME:acctsvc}
+
+server:
+  port: ${SVC_PORT:8443}
+  ssl:
+    key-store: classpath:keystore.p12
+    key-alias: tomcat
+    key-store-password: 123456
+    key-store-type: PKCS12
+
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: ${DB_USER:root}
+      password: ${DB_PWD:123456}
+      url: ${JDBC_URL:jdbc:mysql://10.211.55.5:3306/account?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true}
+      type: com.alibaba.druid.pool.DruidDataSource
+debug: false
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
