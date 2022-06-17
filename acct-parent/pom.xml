@@ -23,7 +23,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.alibaba.druid>1.1.20</version.alibaba.druid>
-        <version.alibaba.fastjson>1.2.62</version.alibaba.fastjson>
+        <version.alibaba.fastjson>1.2.83</version.alibaba.fastjson>
     </properties>
 
     <dependencies>
